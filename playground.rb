@@ -7,6 +7,7 @@ require "pry"
 require 'config'
 require 'lib/locator'
 require 'lib/opener'
+require 'lib/playground_builder'
 require 'lib/cli'
 
 CliParser.parse(ARGV, Config::PLAYGROUNDS.keys)
@@ -19,3 +20,6 @@ raise "please specify playground to create" if !playground
 
 directory ||= Locator.new(default_dir).(playground, session_key)
 config = Config::PLAYGROUNDS[playground]
+
+builder = PlaygroundBuilder.new(directory, Opener.new)
+builder.(playground, config)
