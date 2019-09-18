@@ -1,0 +1,9 @@
+{
+  "name": "playground",
+  "version": "0.1",
+  "description": "Typescript playground",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "private": true
+}
