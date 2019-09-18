@@ -14,6 +14,6 @@ class Playground
   end
 
   def get_contents_path
-    "contents/sinatra/."
+    "contents/#{@name}/."
   end
 end
