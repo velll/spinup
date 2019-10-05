@@ -13,10 +13,6 @@ class PlaygroundBuilder
     abort "#{playground_type} is not supported." if config.nil?
 
     playground = Playground.new(playground_type.to_sym, config)
-    playground.copy_contents(@dir)
-
-    puts "New #{playground_type} playground created under #{@dir}"
-
-    @opener.(@dir)
+    playground.establish(@dir) { @opener.(@dir) }
   end
 end
