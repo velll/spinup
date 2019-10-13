@@ -11,7 +11,8 @@ module Config
     typescript: {
       copy_contents: true,
       commands: [
-        "ls -l"
+        "yarn install",
+        "yarn nf start"
       ]
     }
   }

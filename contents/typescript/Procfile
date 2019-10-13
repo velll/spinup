@@ -1,0 +1,2 @@
+tsc: yarn tsc index.ts --watch
+web: yarn lite-server

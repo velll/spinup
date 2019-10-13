@@ -1,9 +1,14 @@
 {
-  "name": "playground",
-  "version": "0.1",
-  "description": "Typescript playground",
+  "name": "typescript-playground",
+  "version": "0.1.0",
   "main": "index.js",
-  "author": "",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "typescript": "^3.6.4",
+    "foreman": "^3.0.1",
+    "lite-server": "^2.5.4"    
+  },
+  "dependencies": {
+  }
 }
