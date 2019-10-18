@@ -36,12 +36,12 @@ class Playground
   end
 
   def copy_contents(where)
-    self.class.cp_r(get_contents_path, where)
+    self.class.cp_r(contents_path, where)
 
     puts "New #{@name} playground created under #{where}"
   end
 
-  def get_contents_path
+  def contents_path
     "contents/#{@name}/."
   end
 

@@ -6,6 +6,6 @@ describe Playground do
 
     pg = Playground.new :sinatra, config
 
-    expect(pg.get_contents_path).to eq('contents/sinatra/.')
+    expect(pg.contents_path).to eq('contents/sinatra/.')
   end
 end
