@@ -4,6 +4,6 @@ class Locator
   end
 
   def call(type, id)
-    [@root_dir, "#{type}-#{id}"].join("/")
+    [@root_dir, "#{type}-#{id}"].join('/')
   end
 end

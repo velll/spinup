@@ -4,3 +4,5 @@ ruby '2.6.5'
 
 gem 'rspec'
 gem 'pry'
+
+gem 'rubocop'

@@ -2,7 +2,7 @@ require 'fileutils'
 require 'colorized_string'
 
 class Playground
-  class << self 
+  class << self
     def cd(where)
       Dir.chdir(where)
     end
@@ -18,7 +18,7 @@ class Playground
       puts
     end
   end
-  
+
   def initialize(name, config)
     @name = name
 
@@ -28,7 +28,7 @@ class Playground
 
   def establish(where)
     copy_contents(where) if @copy
-    
+
     yield if block_given?
 
     self.class.cd(where)
@@ -50,8 +50,8 @@ class Playground
       self.class.with_empty_lines_around do
         puts "=> running #{ColorizedString.new(command, :green)}"
       end
-      
-      pid = Process.spawn(command, :out => $stdout, :err => $stderr)
+
+      pid = Process.spawn(command, out: $stdout, err: $stderr)
       Process.wait(pid)
     end
   end
