@@ -5,7 +5,7 @@ module Config
       copy_contents: true,
       commands: [
         'bundle',
-        "rerun 'ruby app.rb'"
+        'shotgun'
       ]
     },
     typescript: {
