@@ -14,6 +14,13 @@ module Config
         'yarn install',
         'yarn nf start'
       ]
+    },
+    flask: {
+      copy_contents: true,
+      commands: [
+        'sh build.sh',
+        'sh run.sh'
+      ]
     }
   }
 end
