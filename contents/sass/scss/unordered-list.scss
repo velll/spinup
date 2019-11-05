@@ -1,0 +1,36 @@
+div.smooth-list {
+  padding-left: 2em;
+  
+  @media (min-width: 769px) {
+    max-width: 30%;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+  
+  li {
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: Helvetica, Verdana, sans-serif;
+    border-bottom: 1px solid #ccc;
+
+    &:last-child {
+      border: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    
+      transition: font-size 0.3s ease, background-color 0.3s ease;
+
+      &:hover {
+        font-size: 30px;
+        background: #f6f6f6;
+    
+      }
+    }
+  }
+}

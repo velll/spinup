@@ -1,0 +1,41 @@
+nav {
+  margin: 50px;
+
+  ul {
+    overflow: auto;
+    list-style-type: none;
+  }
+
+  li {
+    height: 25px;
+    float: left;
+    margin-right: 0px;
+    border-right: 1px solid #aaa;
+    padding: 0 20px;
+
+    &:last-child {   // compiles to "nav li:last-child"
+      border-right: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: #ccc;
+      font-size: 25px;
+      font-family: Helvetica, Verdana, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      transition: all 0.5s ease;
+
+      &:hover {
+        color: #666;
+      }
+    }
+  }
+
+  li.active a {
+    font-weight: bold;
+    color: #333;
+  }  
+}
+
+

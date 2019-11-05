@@ -21,6 +21,13 @@ module Config
         'sh build.sh',
         'sh run.sh'
       ]
+    },
+    sass: {
+      copy_contents: true,
+      commands: [
+        'yarn install',
+        'yarn nf start'
+      ]
     }
   }
 end

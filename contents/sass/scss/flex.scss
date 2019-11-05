@@ -1,0 +1,20 @@
+.flex-container {
+  background-color: lightblue;
+
+  width: 80%;
+  margin: 0 auto;
+
+  padding: 1em;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-item {
+  background-color: lightcoral;
+
+  width: 5em;
+  height: 5em;
+  padding: 1em;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "sass-playground",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "foreman": "^3.0.1",
+    "lite-server": "^2.5.4",
+    "sass": "^1.22.12"
+  }
+}
