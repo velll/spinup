@@ -1,11 +1,15 @@
 #!/usr/bin/env ruby
-$LOAD_PATH.unshift File.dirname(__FILE__)
-$LOAD_PATH.unshift "#{File.dirname(__FILE__)}/lib"
+
+require "bundler/setup"
+require "spinup"
+
+# $LOAD_PATH.unshift File.dirname(__FILE__)
+# $LOAD_PATH.unshift "#{File.dirname(__FILE__)}/lib"
 
 require 'securerandom'
 require 'pry'
 
-require 'config'
+require 'lib/config'
 require 'lib/locator'
 require 'lib/opener'
 require 'lib/playground_builder'
