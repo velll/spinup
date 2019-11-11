@@ -25,4 +25,9 @@ Layout/LineLength:
 AllCops:
   Exclude:
     - "spec/spec_helper.rb"
-    - "lib/cli.rb"
+    - "lib/spinup/cli.rb"
+    - "Gemfile"
+    - "Rakefile"
+    - "spinup.gemspec"
+
+    

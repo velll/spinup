@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-require "bundler/setup"
-require "spinup"
+require 'bundler/setup'
+require 'spinup'
 
 # $LOAD_PATH.unshift File.dirname(__FILE__)
 # $LOAD_PATH.unshift "#{File.dirname(__FILE__)}/lib"
@@ -15,6 +15,3 @@ playground, directory = ARGV[0].to_sym, ARGV[1]
 raise 'please specify playground to create' unless playground
 
 Spinup::Runner.new(playground, directory)
-
-
-

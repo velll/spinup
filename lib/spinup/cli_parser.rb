@@ -9,7 +9,7 @@ module Spinup
 
       opt_parser = OptionParser.new do |opts|
         opts.banner = ['Usage: spinup <playground> [<directory>]',
-                      "Supported playgrounds: #{supported.map(&:to_s).join(', ')}"].join("\n")
+                       "Supported playgrounds: #{supported.map(&:to_s).join(', ')}"].join("\n")
 
         opts.on('-h', '--help', 'Prints this help') do
           puts opts
