@@ -1,18 +1,20 @@
 require 'fileutils'
 
-require 'lib/opener'
-require 'lib/playground'
+require 'spinup/opener'
+require 'spinup/playground'
 
-class PlaygroundBuilder
-  def initialize(dir, opener)
-    @dir = dir
-    @opener = opener
-  end
+module Spinup
+  class PlaygroundBuilder
+    def initialize(dir, opener)
+      @dir = dir
+      @opener = opener
+    end
 
-  def call(playground_type, config)
-    abort "#{playground_type} is not supported." if config.nil?
+    def call(playground_type, config)
+      abort "#{playground_type} is not supported." if config.nil?
 
-    playground = Playground.new(playground_type.to_sym, config)
-    playground.establish(@dir) { @opener.(@dir) }
+      playground = Playground.new(playground_type.to_sym, config)
+      playground.establish(@dir) { @opener.(@dir) }
+    end
   end
 end

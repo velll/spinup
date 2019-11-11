@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "spinup"
+
+# $LOAD_PATH.unshift File.dirname(__FILE__)
+# $LOAD_PATH.unshift "#{File.dirname(__FILE__)}/lib"
+
+require 'securerandom'
+require 'pry'
+
+Spinup::CliParser.parse(ARGV, Spinup::Config::PLAYGROUNDS.keys)
+playground, directory = ARGV[0].to_sym, ARGV[1]
+
+raise 'please specify playground to create' unless playground
+
+Spinup::Runner.new(playground, directory)
+
+
+
