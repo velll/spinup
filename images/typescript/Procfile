@@ -1,2 +1,2 @@
-tsc: yarn tsc index.ts --watch
+tsc: yarn tsc index.ts --watch --preserveWatchOutput
 web: yarn lite-server
