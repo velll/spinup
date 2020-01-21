@@ -1,6 +1,7 @@
 require 'spinup/version'
 
-require 'spinup/cli_parser'
+
+require 'spinup/cli'
 require 'spinup/config'
 require 'spinup/runner'
 

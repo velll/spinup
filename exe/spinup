@@ -9,7 +9,7 @@ require 'spinup'
 require 'securerandom'
 require 'pry'
 
-Spinup::CliParser.parse(ARGV, Spinup::Config::PLAYGROUNDS.keys)
+Spinup::CLI.parse(ARGV, Spinup::Config::PLAYGROUNDS.keys)
 playground, directory = ARGV[0].to_sym, ARGV[1]
 
 raise 'please specify playground to create' unless playground

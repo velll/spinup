@@ -8,11 +8,6 @@ module Spinup
       config = Config::PLAYGROUNDS[playground]
 
       builder = PlaygroundBuilder.new(directory, Opener.new)
-
-      # puts playground.inspect
-      # puts config.inspect
-      # raise "ready to build"
-
       builder.(playground, config)
     end
   end

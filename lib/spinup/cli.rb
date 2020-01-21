@@ -1,7 +1,7 @@
 require 'optparse'
 
 module Spinup
-  class CliParser
+  class CLI
     Options = Struct.new(:name)
 
     def self.parse(options, supported)
