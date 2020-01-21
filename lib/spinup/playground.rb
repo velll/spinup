@@ -54,7 +54,7 @@ module Spinup
         end
 
         # prevent using ./Gemfile when spawning ruby processes
-        Bundler.with_clean_env do
+        Bundler.with_unbundled_env do
           pid = Process.spawn(command, out: $stdout, err: $stderr, chdir: where)
           Process.wait(pid)
         end
