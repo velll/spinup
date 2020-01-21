@@ -9,7 +9,7 @@ steps:
   commands:
   - gem install bundler
   - bundle
-  - rspec
+  - bundle exec rspec
   environment:
     LANG: "C.UTF-8"
 
