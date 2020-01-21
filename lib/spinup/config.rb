@@ -9,6 +9,14 @@ module Spinup
           'bundle exec shotgun'
         ]
       },
+      jekyll: {
+        copy_contents: true,
+        commands: [
+          'bundle',
+          'bundle exec jekyll new . --force --blank',
+          'bundle exec jekyll serve'
+        ]
+      },
       typescript: {
         copy_contents: true,
         commands: [
