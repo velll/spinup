@@ -1,6 +1,6 @@
 module Spinup
   module Config
-    DEFAULT_DIR = '~/.playgrounds'
+    DEFAULT_DIR = '~/.spinup-playgrounds'
     PLAYGROUNDS = {
       sinatra: {
         copy_contents: true,
