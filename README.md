@@ -41,7 +41,7 @@ $ spinup sinatra .
 
 Spin up a `typescript` playground somewhere (*somewhere* is currently under `'~/.spinup-playgrounds'`)
 ```bash
-$ spinup sinatra .
+$ spinup typescript
 ```
 
 `-h` is for help and it also prints a list of currently available playgrounds
