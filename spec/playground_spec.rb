@@ -4,6 +4,6 @@ RSpec.describe Spinup::Playground do
 
     pg = Spinup::Playground.new :sinatra, config
 
-    expect(pg.image_path).to eq('images/sinatra/.')
+    expect(File.identical?(pg.image_path, 'images/sinatra/.')).to be true
   end
 end

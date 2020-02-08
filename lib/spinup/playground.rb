@@ -44,7 +44,7 @@ module Spinup
     end
 
     def image_path
-      "images/#{@name}/."
+      File.join(__dir__, "../../images/#{@name}/.")
     end
 
     def run_commands(where)
